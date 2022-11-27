@@ -99,6 +99,9 @@ img {
   display: flex;
   align-items: center;
 }
+.header-cont {
+  height: 80px;
+}
 
 .header-logo {
   margin-right: 93px;
@@ -117,6 +120,7 @@ img {
 }
 .site-nav .link {
   display: block;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -125,6 +129,10 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link:hover,
 .site-nav .link:focus .link:active {
@@ -148,6 +156,10 @@ img {
 
   border-radius: 2px;
   background-color: var(--accent-color);
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav-item:hover::after {
   display: block;
@@ -190,6 +202,10 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cont-link:hover,
 .contakts .cont-link:focus {
@@ -432,6 +448,10 @@ img {
   border-radius: 50%;
   width: 100%;
   height: 100%;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-soc-link:hover,
 .team-soc-link:focus {
@@ -482,6 +502,10 @@ img {
   width: 100%;
   height: 100%;
   color: var(--soc-link);
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .clients-item:hover,
@@ -529,6 +553,10 @@ img {
 .foot-address-link {
   /* display: block; */
   color: var(--main-background);
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .foot-address-link:hover,
 .foot-address-link:focus {
@@ -540,6 +568,9 @@ img {
   margin-top: 9px;
 
   color: var(--brand-color);
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .foot-contakts-link:hover,
@@ -575,6 +606,10 @@ img {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--main-background);
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .foot-soc-link:hover,
 .foot-soc-link:focus {
@@ -613,6 +648,10 @@ img {
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-ptf:hover,
 .button-ptf:focus {
@@ -633,6 +672,10 @@ img {
 .ptf-item {
   margin-top: 30px;
   margin-left: 30px;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ------------overlay-------------- */
@@ -656,8 +699,9 @@ img {
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
 
-  transform: translateY(100%);
-  transition: transform 250ms ease;
+  transform: translateY(150%);
+  transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ptf-overlay > p {
@@ -669,6 +713,10 @@ img {
 
   color: var(--main-background);
 }
+.ptf-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .ptf-item:hover .ptf-overlay {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -676,6 +724,8 @@ img {
 
   transform: translatex(0);
 }
+/* -------------------------------------------------- */
+
 /* .ptf-item:not(:nth-child(3n)) {
   margin-right: 30px;
   margin-bottom: 30px;
